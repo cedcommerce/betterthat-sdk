@@ -1,0 +1,20 @@
+{
+    "name": "ced/betterthat-sdk",
+    "description": "Betterthat Integration Sdk",
+    "type": "package",
+    "license": [
+        "EULA"
+    ],
+    "version": "0.0.1",
+    "require": {
+        "php": ">=5.6",
+        "ext-curl": "*",
+        "psr/log": "*",
+        "psr/container":"*"
+    },
+    "autoload": {
+        "psr-4": {
+            "BetterthatSdk\\": "src/"
+        }
+    }
+}
