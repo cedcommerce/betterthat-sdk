@@ -144,5 +144,9 @@ class Product extends \BetterthatSdk\Core\Request
         return false;
     }
 
+    public function deleteProduct($id,$body){
+        return $this->postRequest('products/'.$id, ['data' => $body],'DELETE');
+    }
+
 
 }
