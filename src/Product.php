@@ -20,6 +20,14 @@ namespace BetterthatSdk;
 
 class Product extends \BetterthatSdk\Core\Request
 {
+
+    /**
+     * @param $data
+     * @return false|string
+     */
+    public function _sendBetterthatVisibility($data){
+        return $this->postRequest('product-visible-status/', ['data' => $data]);
+    }
     /**
      * @param $params
      * @return array
