@@ -46,16 +46,15 @@ class Order extends \BetterthatSdk\Core\Request
     }
 
     /**
-     * @param null $purchaseOrderId
+     * @param null $data
      * @param string $subUrl
      * @return mixed
      */
-    public function putShipOrder($purchaseOrderId = null, $subUrl = self::PUT_ORDER_ACCEPTANCE)
+    public function putShipOrder($data = null, $subUrl = 'update-order-tracking-info')
     {
-        $url = $subUrl . $purchaseOrderId . '/ship';
-        $response = $this->putRequest($url);
-        return $response;
 
+        $response = $this->postRequest($subUrl,['data'=>$data]);
+        return $response;
     }
 
     /**
