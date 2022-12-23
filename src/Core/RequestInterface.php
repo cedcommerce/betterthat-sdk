@@ -33,8 +33,8 @@ interface RequestInterface
     /**
      * Default API URLs
      */
-    const Betterthat_API_URL = 'https://api.betterthat.shop:8083/';
-    const Betterthat_SANDBOX_API_URL = 'https://api.betterthat.shop:8083/';
+    const Betterthat_API_URL = 'https://api.betterthat.com/';
+    const Betterthat_SANDBOX_API_URL = 'https://api.betterthat.com/';
     const POST_INVPRICE = 'updateInventoryStockAndPrice/';
     const GET_CATEGORIES_SUB_URL = 'categories/';
     const GET_ORDERS_SUB_URL = 'orders-list';
